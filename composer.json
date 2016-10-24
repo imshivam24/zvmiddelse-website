@@ -1,0 +1,9 @@
+{
+    "require": {
+        "paquettg/php-html-parser": "^1.7",
+        "ezyang/htmlpurifier": "^4.8"
+    },
+    "config": {
+        "vendor-dir": "static/php/vendor"
+    }
+}
