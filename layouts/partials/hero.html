@@ -1,0 +1,22 @@
+{{ "<!-- Hero -->" | safeHTML}}
+
+<section id="header">
+  <header class="major 1">
+    <img src="images/zvm_logo.png"/>
+    <h1>{{ with .Site.Params.hero.title }} {{ . | markdownify }} {{ end }}</h1>
+    <p>{{ with .Site.Params.hero.description }} {{ . | markdownify }} {{ end }}</p>
+  </header>
+  <div class="container">
+    <ul class="actions">
+      <li><a href="#lidworden" class="button special scrolly">Lid worden</a></li>
+      <li><a href="#trainingstijden" class="button special scrolly">Trainingstijden</a></li>
+      <li><a href="#contributie" class="button special scrolly">Contributie</a></li>
+    </ul>
+    <ul class="subactions">
+      <li><a href="#vacatures" class="scrolly">Vacatures</a></li>
+      <li><a href="#clubvan50" class="scrolly">Club van 50</a></li>
+      <li><a href="#zwembad" class="scrolly">Zwembad</a></li>
+      <li><a href="#footer" class="scrolly">Contact</a></li>
+    </ul>
+  </div>
+</section>

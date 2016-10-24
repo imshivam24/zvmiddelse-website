@@ -1,0 +1,30 @@
+{{ "<!-- Facebook Posts -->" | safeHTML}}
+
+<section id="facebook-posts" class="main special">
+  <div class="container">
+    <div class="content">
+      <header class="major">
+        <h2>{{ with .Site.Params.facebook.posts.title}}{{ . | markdownify }}{{ end }}</h2>
+      </header>
+      <p>{{ with .Site.Params.facebook.posts.description }}{{ . | markdownify }}{{ end }}</p>
+      <div>
+
+        <ul>
+          {{ $urlPre := "https://graph.facebook.com/" }}
+          {{ $fbPosts := getJSON $urlPre "zvmiddelse/feed/" "?access_token=525358960842278|JRUJzYWOsPxTu5BLIlLXede8keA" "&date_format=U" "&limit=10" "&fields=message,link,from,type,name,caption,created_time,description,picture" }}
+          {{ range first 10 $fbPosts.data }}
+            <li>
+              <a href="{{ .link }}" target="_blank"><h3>{{ .name }}</h3></a>
+              <i class="fromnow" data-timestamp="{{ string .created_time }}"></i>
+              <p>{{ .message }}</p>
+            </li>
+          {{ end }}
+          <li class="loadmore"><a href="#">Meer laden...</a></li>
+        </ul>
+
+
+      </div>
+    </div>
+    <a href="#about" class="goto-next scrolly"></a>
+  </div>
+</section>

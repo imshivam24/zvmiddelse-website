@@ -1,0 +1,204 @@
+$blue-dark: rgb(128,128,256);
+
+html {
+  //background-color: ;
+  background-image: linear-gradient(rgba(64, 64, 256, 0.5), rgba(16, 16, 64, 0.5)), url(../images/bg.jpg);
+}
+
+a {
+  color: $blue-dark;
+}
+
+a.readmore {
+  margin-bottom: 1em;
+  &~ p {
+    display: none;
+  }
+}
+
+table th {
+  padding: 0.75em;
+}
+
+.more-info-panel {
+  display: none;
+  margin: 0 2em 2em;
+  padding: 1em;
+  background: rgba(128,128,256, 0.2);
+  border: 1px solid $blue-dark;
+}
+
+#header {
+  header {
+    img {
+      height: 120px;
+    }
+  }
+
+  .container {
+    padding-bottom: 1.5em;
+  }
+
+  ul.actions li {
+    margin: 0 0 1.4em 0;
+  }
+
+  ul.subactions {
+    list-style-type: none;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-right: 1em;
+    li {
+      float: left;
+      display: inline-block;
+      &:after {
+        content: "–";
+        color: $blue-dark;
+        padding-left: 0.5em;
+      }
+      &:last-child:after {
+        content: "";
+      }
+    }
+  }
+}
+
+#sponsors-sidebar {
+  z-index: 10;
+  position: absolute;
+  right: 1vw;
+  top: 0;
+  div {
+    background: #ffffff;
+    font-size: 1.5em;
+    width: 128px;
+    height: 128px;
+    margin: 0 0 2em 0;
+    vertical-align: middle;
+  }
+}
+
+#sponsors {
+  .sponsorlist  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    div {
+      border: 1px solid $blue-dark;
+      display: inline-block;
+      vertical-align: top;
+      background: #ffffff;
+      font-size: 1.5em;
+      width: 128px;
+      height: 128px;
+      margin: 0 2rem 2em 0;
+    }
+  }
+}
+
+@import 'zvm-sponsoren';
+
+#facebook-posts {
+  ul {
+    list-style-type: none;
+  }
+  li {
+    text-align: left;
+    h3 {
+      margin: 0;
+    }
+    i {
+      font-size: 0.8em;
+    }
+    &:nth-of-type(1n+4):not(:last-child) {
+      display: none;
+    }
+  }
+}
+
+#waterpolo-uitslagen,
+#waterpolo-programma {
+  table tr:nth-of-type(1n+5) {
+    display: none;
+  }
+
+  table.foldout tr {
+    display: block;
+  }
+}
+
+input[type="submit"].special,
+input[type="reset"].special,
+input[type="button"].special,
+button.special,
+.button.special {
+	background-color: rgb(64,64,128);
+  &:hover {
+  	background-color: $blue-dark;
+  }
+  .fa {
+    margin-left: 0.6em;
+  }
+}
+
+.main .container:before {
+  min-height: auto;
+}
+
+p, ul {
+	margin: 0 0 0.8em 0;
+}
+
+.floating-logo {
+  position: fixed;
+  opacity: 1;
+  img {
+    width: 75px;
+  }
+}
+
+#trainingstijden {
+  table tbody {
+    tr,
+    tr:nth-child(2n + 1) {
+      background-color: white;
+      &.day {
+        background-color: rgba(128,128,256, 0.2);
+        td {
+          text-align: center;
+        }
+      }
+    }
+    td {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (max-width: 1680px) and (min-width: 980px) {
+  .container {
+    width: 50em;
+  }
+
+  #header .container {
+    margin-left: -25em;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #sponsors {
+    display: block;
+  }
+  #sponsors-sidebar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  #sponsors {
+    display: none;
+  }
+  #sponsors-sidebar {
+    display: block;
+  }
+}

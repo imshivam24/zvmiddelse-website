@@ -1,0 +1,87 @@
+# Site settings
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+languageCode = "en-us"
+
+title = "ZV Middelsé"
+theme = "hugo-highlights-theme"
+
+# Enter your tracking code to enable Google analytics
+googleAnalytics = ""
+
+[params]
+
+  # You can use Markdown for urls [text](//domain.tld/source)
+  #
+  # All icons using Fontawesom's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons.
+
+  # To provide more meta data for search engings feel free to add a few informations.
+  # This lines will be inserted as meta tags.
+  name = "Your Name"
+  description = "Your Description"
+
+  # For a static site it's not possible to provide a contact form. The contact form uses
+  # www.formspree.io as a proxy. The form makes a Post request to their servers to send an email
+  # Visitors can send up to a 1000 emails each month
+  #
+  # How to setup formspree
+  #
+  # - set your email address under 'email' below
+  # - upload the generated site to your server
+  # - send a dummy email to yourself to confirm your account
+  # - click the confirmation link in the email from www.formspree.io
+  # - That's all. Enjoy mailing!
+  email = "your@mail.com"
+
+  custom_css = ["css/zvm.css"]
+
+  # Hero Section
+  [params.hero]
+    title = "ZV Middelsé"
+    description = "Zwemvereniging Stiens"
+
+  [params.facebook.posts]
+    enable = true
+    title = "Laatste nieuws"
+
+  # footer section
+  # this section includes
+  #
+  # - the contact form
+  # - social icons
+  #
+  # It's possible to disable the whole footer or disable only social icons or contact form
+
+  [params.footer]
+    enable = true
+    title = "Contact opnemen"
+
+    # contact form
+    [params.footer.contact]
+      enable = true
+
+    [params.footer.contact.form]
+      name = "Naam"
+      email = "Jouw e-mailadres"
+      message = "Je bericht"
+      buttonText = "versturen"
+
+    # social icons
+    [params.footer.social_list]
+      enable = true
+
+      [[params.footer.social]]
+        title = "Facebook"
+        icon = "fa-facebook"
+        link = "https://www.facebook.com/zvmiddelse"
+
+      [[params.footer.social]]
+        title = "Email"
+        icon = "fa-envelope"
+        link = "mailto:info@zvmiddelse.nl"
+
+    # copyright
+    #[params.footer.copyright.notice]
+
+      [[params.footer.copyright.notice]]
+        text = "© ZV Middels&eacute; 2016"
