@@ -59,6 +59,36 @@ jQuery(document).ready(function () {
     return false;
   });
 
+	var fb_url = 'https://graph.facebook.com/zvmiddelse/feed/?access_token=525358960842278|JRUJzYWOsPxTu5BLIlLXede8keA&date_format=U&limit=10&fields=message,link,from,type,name,caption,created_time,description,picture';
+	$.getJSON(fb_url, function(data){
+		if( data.data ) {
+      var fb_posts = $('#facebook-posts ul');
+      fb_posts.empty();
+      $.each( data.data, function( index, entry) {
+        if( entry.link ) {
+          fb_posts.append(
+            '<li>' +
+              '<a href="' + entry.link + '" target="_blank">' +
+              '<i class="fromnow" data-timestamp="' + entry.created_time + '"></i></a>' +
+              '<p>' + entry.message + '</p>' +
+            '</li>'
+          );
+        } else {
+          fb_posts.append(
+            '<li>' +
+              '<i class="fromnow" data-timestamp="' + entry.created_time + '"></i>' +
+              '<p>' + entry.message + '</p>' +
+            '</li>'
+          );
+        }
+
+      });
+      jQuery('.fromnow').each(function() {
+        jQuery(this).text(moment(jQuery(this).data('timestamp'), 'X').fromNow());
+      });
+    }
+	});
+
   jQuery('a.more-info-inline').click(function () {
     jQuery(this).parent('p').next('.more-info-panel').toggle();
     return false;
@@ -84,7 +114,7 @@ jQuery(document).ready(function () {
         .addClass('fa-chevron-circle-up');
 
       jQuery(more_info_panel).detach().insertBefore(this);
-      jQuery(more_info_panel).toggle();
+      jQuery(more_info_panel).slideToggle(400);
     } else {
       // Fold in
       more_info_panel = jQuery(this).prev('.more-info-panel');
@@ -101,11 +131,11 @@ jQuery(document).ready(function () {
   });
 
   jQuery('#waterpolo-programma').load(
-    'http://localhost/php/getresults.php?handle=programma'
+    '/php/getresults.php?handle=programma'
   ).next('.showmore').click(waterpoloFoldOut);
 
   jQuery('#waterpolo-uitslagen').load(
-    'http://localhost/php/getresults.php?handle=uitslagen'
+    '/php/getresults.php?handle=uitslagen'
   ).next('.showmore').click(waterpoloFoldOut);
 
 }); // document ready

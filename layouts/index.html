@@ -9,6 +9,11 @@
 		{{ partial "head.html" . }}
 	</head>
 	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K68NXQ"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
 		{{ partial "hero.html" . }}
 
 		{{ partial "sponsors-sidebar.html" . }}
@@ -24,6 +29,7 @@
 		{{ partial "clubvan50.html" . }}
 		{{ partial "contributie.html" . }}
 		{{ partial "zwembad.html" . }}
+		{{ partial "informatie.html" . }}
 
 		{{ if .Site.Params.footer.enable }}
 

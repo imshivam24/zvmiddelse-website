@@ -1,23 +1,31 @@
 /* line 3, ../sass/zvm-sponsoren.scss */
+#sponsors .content div.lekkers,
+#sponsors-sidebar div.lekkers {
+  text-align: center;
+  font-size: 1.6em;
+  padding-top: 0.8em;
+}
+/* line 9, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.poiesz,
 #sponsors-sidebar div.poiesz {
   background: white url("../images/sponsors/poiesz.jpg") no-repeat 0 0;
 }
-/* line 7, ../sass/zvm-sponsoren.scss */
+/* line 13, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.aukerauwerda,
 #sponsors-sidebar div.aukerauwerda {
   background: white url("../images/sponsors/aukerauwerda.jpg") no-repeat 0 0;
 }
-/* line 11, ../sass/zvm-sponsoren.scss */
+/* line 17, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.overeinder,
 #sponsors-sidebar div.overeinder {
   background: white url("../images/sponsors/overeinder.png") no-repeat 50% 40px;
-  padding-top: 89px;
+  padding-top: 85px;
   font-size: 1.2em;
   line-height: 1em;
   font-weight: bold;
+  text-align: center;
 }
-/* line 19, ../sass/zvm-sponsoren.scss */
+/* line 26, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.mosselman,
 #sponsors-sidebar div.mosselman {
   background: white url("../images/sponsors/mosselman.png") no-repeat 50% 40px;
@@ -25,49 +33,64 @@
   font-size: 0.8em;
   font-weight: bold;
 }
-/* line 26, ../sass/zvm-sponsoren.scss */
+/* line 33, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.formido,
 #sponsors-sidebar div.formido {
   background: white url("../images/sponsors/formido.png") no-repeat 50% 0px;
-  font-size: 0.8em;
+  font-size: 1.6em;
   font-weight: bold;
+  text-align: center;
+  padding-top: 3.6em;
 }
-/* line 32, ../sass/zvm-sponsoren.scss */
+/* line 41, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.abs,
 #sponsors-sidebar div.abs {
   background: white url("../images/sponsors/abs.png") no-repeat 50% 40px;
   font-size: 0.8em;
   font-weight: bold;
 }
-/* line 38, ../sass/zvm-sponsoren.scss */
+/* line 47, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.peterjansen,
 #sponsors-sidebar div.peterjansen {
   background: white url("../images/sponsors/peterjansen.png") no-repeat 50% 40px;
   font-size: 0.8em;
   font-weight: bold;
 }
-/* line 44, ../sass/zvm-sponsoren.scss */
+/* line 53, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.hoekstra,
 #sponsors-sidebar div.hoekstra {
   background: white url("../images/sponsors/hoekstra.png") no-repeat 50% 0px;
   font-size: 0.8em;
   font-weight: bold;
 }
-/* line 51, ../sass/zvm-sponsoren.scss */
+/* line 60, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.bakker,
 #sponsors-sidebar div.bakker {
   background: white url("../images/sponsors/bakker.png") no-repeat 50% 0px;
   font-size: 0.8em;
   font-weight: bold;
 }
-/* line 58, ../sass/zvm-sponsoren.scss */
+/* line 67, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.dnauta,
 #sponsors-sidebar div.dnauta {
   background: white url("../images/sponsors/nauta.png") no-repeat 50% 0px;
   font-size: 0.8em;
   font-weight: bold;
 }
-/* line 65, ../sass/zvm-sponsoren.scss */
+/* line 74, ../sass/zvm-sponsoren.scss */
+#sponsors .content div.vanleek,
+#sponsors-sidebar div.vanleek {
+  text-align: center;
+  font-size: 1.6em;
+  padding-top: 1.4em;
+}
+/* line 80, ../sass/zvm-sponsoren.scss */
+#sponsors .content div.nicoenaeltsje,
+#sponsors-sidebar div.nicoenaeltsje {
+  text-align: center;
+  padding-top: 0.2em;
+}
+/* line 85, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.amicaal,
 #sponsors-sidebar div.amicaal {
   background: white url("../images/sponsors/amicaal.png") no-repeat 50% 0px;

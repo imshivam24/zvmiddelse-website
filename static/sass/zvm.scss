@@ -1,7 +1,6 @@
 $blue-dark: rgb(128,128,256);
 
 html {
-  //background-color: ;
   background-image: linear-gradient(rgba(64, 64, 256, 0.5), rgba(16, 16, 64, 0.5)), url(../images/bg.jpg);
 }
 
@@ -31,7 +30,7 @@ table th {
 #header {
   header {
     img {
-      height: 120px;
+      height: 160px;
     }
   }
 
@@ -69,6 +68,7 @@ table th {
   right: 1vw;
   top: 0;
   div {
+    cursor: pointer;
     background: #ffffff;
     font-size: 1.5em;
     width: 128px;
@@ -118,12 +118,22 @@ table th {
 
 #waterpolo-uitslagen,
 #waterpolo-programma {
-  table tr:nth-of-type(1n+5) {
-    display: none;
+  table {
+    tr {
+      td:nth-child(1) {
+        width: 5em;
+      }
+      &:nth-of-type(n+6) {
+        display: none;
+      }
+    }
+    &.foldout tr {
+      display: block;
+    }
   }
 
-  table.foldout tr {
-    display: block;
+  &+a {
+    margin-bottom: 2em;
   }
 }
 
@@ -168,9 +178,13 @@ p, ul {
           text-align: center;
         }
       }
-    }
-    td {
-      text-align: left;
+
+      td {
+        text-align: left;
+        &:nth-child(1) {
+          width: 8em;
+        }
+      }
     }
   }
 }
@@ -200,5 +214,15 @@ p, ul {
   }
   #sponsors-sidebar {
     display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"],
+  button,
+  .button {
+    padding: 0 0.6em;
   }
 }

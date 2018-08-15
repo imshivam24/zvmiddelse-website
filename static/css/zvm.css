@@ -4,26 +4,26 @@ html {
   background-image: linear-gradient(rgba(64, 64, 255, 0.5), rgba(16, 16, 64, 0.5)), url(../images/bg.jpg);
 }
 
-/* line 8, ../sass/zvm.scss */
+/* line 7, ../sass/zvm.scss */
 a {
   color: #8080ff;
 }
 
-/* line 12, ../sass/zvm.scss */
+/* line 11, ../sass/zvm.scss */
 a.readmore {
   margin-bottom: 1em;
 }
-/* line 14, ../sass/zvm.scss */
+/* line 13, ../sass/zvm.scss */
 a.readmore ~ p {
   display: none;
 }
 
-/* line 19, ../sass/zvm.scss */
+/* line 18, ../sass/zvm.scss */
 table th {
   padding: 0.75em;
 }
 
-/* line 23, ../sass/zvm.scss */
+/* line 22, ../sass/zvm.scss */
 .more-info-panel {
   display: none;
   margin: 0 2em 2em;
@@ -32,50 +32,51 @@ table th {
   border: 1px solid #8080ff;
 }
 
-/* line 33, ../sass/zvm.scss */
+/* line 32, ../sass/zvm.scss */
 #header header img {
-  height: 120px;
+  height: 160px;
 }
-/* line 38, ../sass/zvm.scss */
+/* line 37, ../sass/zvm.scss */
 #header .container {
   padding-bottom: 1.5em;
 }
-/* line 42, ../sass/zvm.scss */
+/* line 41, ../sass/zvm.scss */
 #header ul.actions li {
   margin: 0 0 1.4em 0;
 }
-/* line 46, ../sass/zvm.scss */
+/* line 45, ../sass/zvm.scss */
 #header ul.subactions {
   list-style-type: none;
   margin-left: 1em;
   margin-right: 1em;
   padding-right: 1em;
 }
-/* line 51, ../sass/zvm.scss */
+/* line 50, ../sass/zvm.scss */
 #header ul.subactions li {
   float: left;
   display: inline-block;
 }
-/* line 54, ../sass/zvm.scss */
+/* line 53, ../sass/zvm.scss */
 #header ul.subactions li:after {
   content: "–";
   color: #8080ff;
   padding-left: 0.5em;
 }
-/* line 59, ../sass/zvm.scss */
+/* line 58, ../sass/zvm.scss */
 #header ul.subactions li:last-child:after {
   content: "";
 }
 
-/* line 66, ../sass/zvm.scss */
+/* line 65, ../sass/zvm.scss */
 #sponsors-sidebar {
   z-index: 10;
   position: absolute;
   right: 1vw;
   top: 0;
 }
-/* line 71, ../sass/zvm.scss */
+/* line 70, ../sass/zvm.scss */
 #sponsors-sidebar div {
+  cursor: pointer;
   background: #ffffff;
   font-size: 1.5em;
   width: 128px;
@@ -103,25 +104,33 @@ table th {
 }
 
 /* line 3, ../sass/zvm-sponsoren.scss */
+#sponsors .content div.lekkers,
+#sponsors-sidebar div.lekkers {
+  text-align: center;
+  font-size: 1.6em;
+  padding-top: 0.8em;
+}
+/* line 9, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.poiesz,
 #sponsors-sidebar div.poiesz {
   background: white url("../images/sponsors/poiesz.jpg") no-repeat 0 0;
 }
-/* line 7, ../sass/zvm-sponsoren.scss */
+/* line 13, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.aukerauwerda,
 #sponsors-sidebar div.aukerauwerda {
   background: white url("../images/sponsors/aukerauwerda.jpg") no-repeat 0 0;
 }
-/* line 11, ../sass/zvm-sponsoren.scss */
+/* line 17, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.overeinder,
 #sponsors-sidebar div.overeinder {
   background: white url("../images/sponsors/overeinder.png") no-repeat 50% 40px;
-  padding-top: 89px;
+  padding-top: 85px;
   font-size: 1.2em;
   line-height: 1em;
   font-weight: bold;
+  text-align: center;
 }
-/* line 19, ../sass/zvm-sponsoren.scss */
+/* line 26, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.mosselman,
 #sponsors-sidebar div.mosselman {
   background: white url("../images/sponsors/mosselman.png") no-repeat 50% 40px;
@@ -129,49 +138,64 @@ table th {
   font-size: 0.8em;
   font-weight: bold;
 }
-/* line 26, ../sass/zvm-sponsoren.scss */
+/* line 33, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.formido,
 #sponsors-sidebar div.formido {
   background: white url("../images/sponsors/formido.png") no-repeat 50% 0px;
-  font-size: 0.8em;
+  font-size: 1.6em;
   font-weight: bold;
+  text-align: center;
+  padding-top: 3.6em;
 }
-/* line 32, ../sass/zvm-sponsoren.scss */
+/* line 41, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.abs,
 #sponsors-sidebar div.abs {
   background: white url("../images/sponsors/abs.png") no-repeat 50% 40px;
   font-size: 0.8em;
   font-weight: bold;
 }
-/* line 38, ../sass/zvm-sponsoren.scss */
+/* line 47, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.peterjansen,
 #sponsors-sidebar div.peterjansen {
   background: white url("../images/sponsors/peterjansen.png") no-repeat 50% 40px;
   font-size: 0.8em;
   font-weight: bold;
 }
-/* line 44, ../sass/zvm-sponsoren.scss */
+/* line 53, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.hoekstra,
 #sponsors-sidebar div.hoekstra {
   background: white url("../images/sponsors/hoekstra.png") no-repeat 50% 0px;
   font-size: 0.8em;
   font-weight: bold;
 }
-/* line 51, ../sass/zvm-sponsoren.scss */
+/* line 60, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.bakker,
 #sponsors-sidebar div.bakker {
   background: white url("../images/sponsors/bakker.png") no-repeat 50% 0px;
   font-size: 0.8em;
   font-weight: bold;
 }
-/* line 58, ../sass/zvm-sponsoren.scss */
+/* line 67, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.dnauta,
 #sponsors-sidebar div.dnauta {
   background: white url("../images/sponsors/nauta.png") no-repeat 50% 0px;
   font-size: 0.8em;
   font-weight: bold;
 }
-/* line 65, ../sass/zvm-sponsoren.scss */
+/* line 74, ../sass/zvm-sponsoren.scss */
+#sponsors .content div.vanleek,
+#sponsors-sidebar div.vanleek {
+  text-align: center;
+  font-size: 1.6em;
+  padding-top: 1.4em;
+}
+/* line 80, ../sass/zvm-sponsoren.scss */
+#sponsors .content div.nicoenaeltsje,
+#sponsors-sidebar div.nicoenaeltsje {
+  text-align: center;
+  padding-top: 0.2em;
+}
+/* line 85, ../sass/zvm-sponsoren.scss */
 #sponsors .content div.amicaal,
 #sponsors-sidebar div.amicaal {
   background: white url("../images/sponsors/amicaal.png") no-repeat 50% 0px;
@@ -200,18 +224,28 @@ table th {
   display: none;
 }
 
-/* line 121, ../sass/zvm.scss */
-#waterpolo-uitslagen table tr:nth-of-type(1n+5),
-#waterpolo-programma table tr:nth-of-type(1n+5) {
+/* line 123, ../sass/zvm.scss */
+#waterpolo-uitslagen table tr td:nth-child(1),
+#waterpolo-programma table tr td:nth-child(1) {
+  width: 5em;
+}
+/* line 126, ../sass/zvm.scss */
+#waterpolo-uitslagen table tr:nth-of-type(n+6),
+#waterpolo-programma table tr:nth-of-type(n+6) {
   display: none;
 }
-/* line 125, ../sass/zvm.scss */
+/* line 130, ../sass/zvm.scss */
 #waterpolo-uitslagen table.foldout tr,
 #waterpolo-programma table.foldout tr {
   display: block;
 }
+/* line 135, ../sass/zvm.scss */
+#waterpolo-uitslagen + a,
+#waterpolo-programma + a {
+  margin-bottom: 2em;
+}
 
-/* line 130, ../sass/zvm.scss */
+/* line 140, ../sass/zvm.scss */
 input[type="submit"].special,
 input[type="reset"].special,
 input[type="button"].special,
@@ -219,7 +253,7 @@ button.special,
 .button.special {
   background-color: #404080;
 }
-/* line 136, ../sass/zvm.scss */
+/* line 146, ../sass/zvm.scss */
 input[type="submit"].special:hover,
 input[type="reset"].special:hover,
 input[type="button"].special:hover,
@@ -227,7 +261,7 @@ button.special:hover,
 .button.special:hover {
   background-color: #8080ff;
 }
-/* line 139, ../sass/zvm.scss */
+/* line 149, ../sass/zvm.scss */
 input[type="submit"].special .fa,
 input[type="reset"].special .fa,
 input[type="button"].special .fa,
@@ -236,76 +270,92 @@ button.special .fa,
   margin-left: 0.6em;
 }
 
-/* line 144, ../sass/zvm.scss */
+/* line 154, ../sass/zvm.scss */
 .main .container:before {
   min-height: auto;
 }
 
-/* line 148, ../sass/zvm.scss */
+/* line 158, ../sass/zvm.scss */
 p, ul {
   margin: 0 0 0.8em 0;
 }
 
-/* line 152, ../sass/zvm.scss */
+/* line 162, ../sass/zvm.scss */
 .floating-logo {
   position: fixed;
   opacity: 1;
 }
-/* line 155, ../sass/zvm.scss */
+/* line 165, ../sass/zvm.scss */
 .floating-logo img {
   width: 75px;
 }
 
-/* line 162, ../sass/zvm.scss */
+/* line 172, ../sass/zvm.scss */
 #trainingstijden table tbody tr,
 #trainingstijden table tbody tr:nth-child(2n + 1) {
   background-color: white;
 }
-/* line 165, ../sass/zvm.scss */
+/* line 175, ../sass/zvm.scss */
 #trainingstijden table tbody tr.day,
 #trainingstijden table tbody tr:nth-child(2n + 1).day {
   background-color: rgba(128, 128, 255, 0.2);
 }
-/* line 167, ../sass/zvm.scss */
+/* line 177, ../sass/zvm.scss */
 #trainingstijden table tbody tr.day td,
 #trainingstijden table tbody tr:nth-child(2n + 1).day td {
   text-align: center;
 }
-/* line 172, ../sass/zvm.scss */
-#trainingstijden table tbody td {
+/* line 182, ../sass/zvm.scss */
+#trainingstijden table tbody tr td,
+#trainingstijden table tbody tr:nth-child(2n + 1) td {
   text-align: left;
+}
+/* line 184, ../sass/zvm.scss */
+#trainingstijden table tbody tr td:nth-child(1),
+#trainingstijden table tbody tr:nth-child(2n + 1) td:nth-child(1) {
+  width: 8em;
 }
 
 @media screen and (max-width: 1680px) and (min-width: 980px) {
-  /* line 179, ../sass/zvm.scss */
+  /* line 193, ../sass/zvm.scss */
   .container {
     width: 50em;
   }
 
-  /* line 183, ../sass/zvm.scss */
+  /* line 197, ../sass/zvm.scss */
   #header .container {
     margin-left: -25em;
   }
 }
 @media screen and (max-width: 1080px) {
-  /* line 189, ../sass/zvm.scss */
+  /* line 203, ../sass/zvm.scss */
   #sponsors {
     display: block;
   }
 
-  /* line 192, ../sass/zvm.scss */
+  /* line 206, ../sass/zvm.scss */
   #sponsors-sidebar {
     display: none;
   }
 }
 @media screen and (min-width: 1080px) {
-  /* line 198, ../sass/zvm.scss */
+  /* line 212, ../sass/zvm.scss */
   #sponsors {
     display: none;
   }
 
-  /* line 201, ../sass/zvm.scss */
+  /* line 215, ../sass/zvm.scss */
   #sponsors-sidebar {
     display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 221, ../sass/zvm.scss */
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"],
+  button,
+  .button {
+    padding: 0 0.6em;
   }
 }

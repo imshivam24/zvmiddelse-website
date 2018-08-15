@@ -1,6 +1,6 @@
 # Site settings
-baseurl = "http://replace-this-with-your-hugo-site.com/"
-languageCode = "en-us"
+baseurl = "http://www.zvmiddelse.nl/"
+languageCode = "nl-NL"
 
 title = "ZV Middelsé"
 theme = "hugo-highlights-theme"

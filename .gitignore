@@ -1,1 +1,3 @@
 static/php/vendor
+public
+*.sass-cache*
