@@ -1,52 +1,101 @@
 
 {{ "<!-- contributie -->" | safeHTML }}
-  <section id="contributie" class="main">
-    <div class="container">
-      <div class="content">
-        <header class="major">
-          <h2>Contributie</h2>
-        </header>
-  			<p><h4>Betaling contributie (en KNZB-afdracht):</h4>
-        Het contributie-tarief is afhankelijk van de groep waarbij je traint, het aantal keren dat je traint en de startvergunning.<br/>
-        Het bestuur vraagt jaarlijks tijdens de ALV goedkeuring voor verhoging van de contributietarieven.</p>
-        <p><h4>De contributie-tarieven per 1 juli 2018 zijn:</h4>
-        Dolfijntjes (9 jaar en jonger): € 22,50 per kwartaal<br/>
-        Jeugdrecreanten (1 x zwemmen per week): € 33,25 per kwartaal<br/>
-        Jeugdrecreanten (2 x zwemmen per week): € 45,50 per kwartaal<br/>
-        Hieronder vallen de jeugd-wedstrijdzwemmers en de minipoloërs</p>
-        <p>Senior recreanten: € 45,50 per kwartaal<br/>
-        Wedstrijdzwemmers: € 56,75 per kwartaal<br/>
-        Jeugd waterpolo (onder 13): € 45,50 per kwartaal<br/>
-        Jeugd waterpolo (onder 17): € 57,00 per kwartaal<br/>
-        Senior waterpolo: € 69,00 per kwartaal<br/>
-        Senior recreanten waterpolo: € 57,50 per kwartaal</p>
-        {{ partial "readmore.html" . }}
-        <div class="more-info-panel">
-          <p><strong>KNZB-afdracht: </strong><br/>
+<section id="contributie" class="main">
+  <div class="container">
+    <div class="content">
+      <header class="major">
+        <h2>Contributie</h2>
+      </header>
+      <p><h4>Betaling contributie (en KNZB-afdracht):</h4>
+      Het contributie-tarief is afhankelijk van de groep waarbij je traint, het aantal keren dat je traint en de startvergunning.<br/>
+      Het bestuur vraagt jaarlijks tijdens de ALV goedkeuring voor verhoging van de contributietarieven.</p>
+      <p><h4>De contributie-tarieven per 1 juli 2018 zijn:</h4>
+
+      <table>
+        <tr>
+          <th>Sport</th>
+          <th>Aantal keren trainen</th>
+          <th>Leeftijdscategorie</th>
+          <th>Contributie huidig</th>
+          <th>Contributie per 1 juli 2018</th>
+          <th>Contributie per 1 jan. 2019</th>
+        </tr>
+        <tr>
+          <td>Dolfijntjes</td><td>1</td><td>jeugd</td><td>22,5</td><td>22,5</td><td>24</td>
+        </tr>
+        <tr>
+          <td>Recreanten</td><td>1</td><td>jeugd</td><td>32,5</td><td>33,25</td><td>34,25</td>
+        </tr>
+        <tr>
+          <td>Recreanten</td><td>2</td><td>jeugd</td><td>44,5</td><td>45,5</td><td>47</td>
+        </tr>
+        <tr>
+          <td>Recreanten</td><td>-</td><td>volwassenen</td><td>44,5</td><td>45,5</td><td>47</td>
+        </tr>
+        <tr>
+          <td>Waterpolo</td><td>-</td><td><13</td><td>44,5</td><td>45,5</td><td>47</td>
+        </tr>
+        <tr>
+          <td>Waterpolo</td><td>-</td><td>jeugd</td><td>49,5</td><td>50,75</td><td>52,25</td>
+        </tr>
+        <tr>
+          <td>Waterpolo</td><td>-</td><td>volwassenen</td><td>56,5</td><td>57,75</td><td>59,75</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th>Wedstrijden</th>
+          <th>Leeftijdscategorie</th>
+          <th>Contributie huidig</th>
+          <th>Contributie per 1 juli 2018</th>
+          <th>Contributie per 1 jan. 2019</th>
+        </tr>
+        <tr>
+          <td>Waterpolo</td><td>&lt; 13</td><td>0</td><td>0</td><td>3</td>
+        </tr>
+        <tr>
+          <td>Waterpolo</td><td>&lt; 15</td><td>6</td><td>6,25</td><td>6,25</td>
+        </tr>
+        <tr>
+          <td>Waterpolo</td><td>&lt; 17</td><td>6</td><td>6,25</td><td>6,25</td>
+        </tr>
+        <tr>
+          <td>Waterpolo</td><td>volwassenen</td><td>11</td><td>11,25</td><td>11,5</td>
+        </tr>
+        <tr>
+          <td>Zwemmen</td><td>-</td><td>11</td><td>11,25</td><td>11,5</td>
+        </tr>
+      </table>
+      <br/>
+      Alle bedragen zijn per kwartaal.
+      {{ partial "readmore.html" . }}
+      <div class="more-info-panel">
+        <p><strong>KNZB-afdracht: </strong><br/>
           Elk lid van Zwemvereniging Middelsé is tevens bondslid van de KNZB. Zv Middelsé draagt jaarlijks de bondscontributie af aan de KNZB.</p>
-          <p>Deze KNZB-afdrachtstarieven (inclusief regio toeslag en verzekering) zijn voor 2017:<br/>
+        <p>Deze KNZB-afdrachtstarieven (inclusief regio toeslag en verzekering) zijn voor 2018:<br/>
           Leden zonder startvergunning: € 16,70<br />
           Leden met startvergunning onder 12 jaar: € 18,45<br/>
           Leden met startvergunning ouder dan 12: € 50,45</p>
-          <p>Deze KNZB-afdrachtstarieven worden jaarlijks geïndexeerd.<br/>
+        <p>Deze KNZB-afdrachtstarieven worden jaarlijks geïndexeerd.<br/>
           Leden die meedoen aan wedstrijden dienen te beschikken over een startvergunning.</p>
-          <p><strong>Automatische incasso:</strong><br/>
+        <p><strong>Automatische incasso:</strong><br/>
           Wij geven er de voorkeur aan dat de contributie per automatische incasso wordt betaald.</p>
-          <p>Van degenen die op het aanmeldingformulier toestemming hebben gegeven voor een automatische incasso wordt 4 x per jaar de contributie geïnd en daarnaast 1 x per jaar de KNZB-afdracht.<br/>
+        <p>Van degenen die op het aanmeldingformulier toestemming hebben gegeven voor een automatische incasso wordt 4 x per jaar de contributie geïnd en daarnaast 1 x per jaar de KNZB-afdracht.<br/>
           Eigen overschrijving: Van degenen die aangegeven hebben niet per automatische incasso wensen te betalen wordt verwacht dat zij elk kwartaal de contributie overschrijven op bankrekeningnummer: NL03 RABO 0120 8832 44 t.n.v. Zwemvereniging Middelsé.</p>
-          <p>Daarnaast wordt verwacht dat 1 x per jaar de KNZB-afdracht zal worden betaald.<br/>
+        <p>Daarnaast wordt verwacht dat 1 x per jaar de KNZB-afdracht zal worden betaald.<br/>
           Bij het niet nakomen van de contributie-verplichting behoudt de vereniging zich het recht voor, de incasso van de verschuldigde contributie in handen te geven van een incasso-bureau. Alvorens hiertoe over te gaan, zal je over het voornemen van het bestuur schriftelijk geïnformeerd worden. De uit de incasso voortvloeiende kosten zullen op jou worden verhaald.</p>
-          <p><strong>Opzeggen:</strong><br/>
+        <p><strong>Opzeggen:</strong><br/>
           Opzeggen van de lidmaatschap is alleen mogelijk in de eerste 2 maanden van elk kwartaal. De beëindiging van het lidmaatschap zal dan per de eerstvolgende kwartaal ingaan. (opzeggen in januari c.q. februari resulteert in een beëindiging per 1 april, opzeggen in april of mei resulteert in een beëindiging per 1 juli etc.)<br/>
           Bij niet tijdige opzegging van het lidmaatschap zal deze met een kwartaal worden verlengd.<br/>
           Beëindiging van het lidmaatschap dient schriftelijk of per e-mail plaats te vinden.</p>
-          <p><strong>Contactgegevens:</strong><br/>
+        <p><strong>Contactgegevens:</strong><br/>
           Pieter Folkertsma<br/>
           E-mail: penningmeester@zvmiddelse.nl</p>
-          <p><strong>Algemene mutaties:</strong><br/>
+        <p><strong>Algemene mutaties:</strong><br/>
           Algemene mutaties, adres, telefoonnummer, e-mailadres, wijziging rekeningnummer etc. moeten kenbaar gemaakt worden aan de penningmeester.</p>
-        </div>
       </div>
-      <a href="#zwembad" class="goto-next scrolly"></a>
     </div>
-  </section>
+    <a href="#zwembad" class="goto-next scrolly"></a>
+  </div>
+</section>
