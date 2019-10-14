@@ -84,4 +84,4 @@ googleAnalytics = ""
     #[params.footer.copyright.notice]
 
       [[params.footer.copyright.notice]]
-        text = "© ZV Middels&eacute; 2016"
+        text = "© ZV Middels&eacute; 2019"

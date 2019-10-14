@@ -18,7 +18,7 @@
 
 		{{ partial "sponsors-sidebar.html" . }}
 
-		{{ partial "facebook-posts.html" . }}
+		{{/* partial "facebook-posts.html" . */}}
 
 		{{ partial "about.html" . }}
 		{{ partial "lidworden.html" . }}
@@ -38,6 +38,8 @@
 					{{ if .Site.Params.footer.contact.enable }}
 						{{ partial "footer-contact.html" . }}
 					{{ end }}
+
+					{{ partial "footer-confidant.html" . }}
 
 					{{ if .Site.Params.footer.social_list.enable }}
 						{{ partial "footer-social.html" . }}

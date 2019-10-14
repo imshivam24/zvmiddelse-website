@@ -1,3 +1,4 @@
 static/php/vendor
 public
 *.sass-cache*
+.idea
