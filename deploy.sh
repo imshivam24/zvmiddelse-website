@@ -1,2 +1,2 @@
 hugo
-scp -r public/* zvmiddelse-nl@ssh.pcextreme.nl:/home/vhosting/ae/vhost0039446/domains/zvmiddelse.nl/htdocs/www/.
+scp -r public/* zvmiddelsenl@solitary-fog.zvmiddelsenl.webinf.buildingtogether.io:/srv/home/zvmiddelsenl/domains/zvmiddelse.nl/htdocs/www/.
